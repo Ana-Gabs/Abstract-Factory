@@ -80,4 +80,5 @@ Preparando un postre keto: Cheesecake sin azúcar. 🥧
 9. PostreVegetariano.js (class PostreVegetariano extends Postre) --> Implementacion de postres vegetarianos.
 
 ## Implentación de Abstract Factory
-El patrón de siseño Abstract Factory es util cuando se requiere de crear familias de productos relacionados sin depender de clases concretas. En el ejemplos se trabaja con dietas para generar un menu, al perctencer a una misma linea por medio del uso de fabricas se pueden crear familas de productos 
+El patrón de siseño Abstract Factory es util cuando se requiere de crear familias de productos relacionados sin depender de clases concretas. En el ejemplos se trabaja con dietas para generar un menu, al perctencer a una misma linea por medio del uso de fabricas se pueden crear familas de productos.
+En el caso condreto de este programa el patron Abstract Factory se utiliza en este progtram para crear familias de objetos relacionados,siendo en este caso los menus para dos diferentes tipos de dietas (Vegetariana y Keto), sin especificar sus clases concretas. Por medio de una interfa común en lac clase abstracta **FabricaDieta**  que es implemetada por las fabrica concreta (**FabricaVegetariana** **FabricaKeto**). De esta forma cada una de dichas fabricas crea su propio objeto (platos y postres) correspondientes a su dieta. 
